@@ -7,3 +7,20 @@ console.log(firstAsync())
 firstAsync().then(val => {
   console.log(val)
 })
+
+
+
+async function asyncFun(params) {
+  let promise = new Promise((resolve) => {
+    setTimeout(function () {
+      resolve('not it is done')
+    },1000)
+  })
+  await promise.then(val => {
+    console.log(val)
+  })
+  // return Promise.resolve(3)
+}
+asyncFun().then(val => {
+  console.log( val)
+})
