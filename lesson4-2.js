@@ -22,3 +22,5 @@ padStart  起始位置    padStart结束为止
 for (let i = 1; i < 30020; i++) {
   console.log(i.toString().padStart(5, '*#'))
 }
+
+
