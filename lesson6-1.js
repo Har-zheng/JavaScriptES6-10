@@ -28,12 +28,23 @@ console.log()
 //  return matches
 // }
 // console.log(select(/"([^"]*)"/g,str ))
-function select(regExp, str) {
-  const marches = []
-  for (const match of str.marcheAll(regExp)) {
-    marches.push(match[1])
-  }
-  return marches
+// function select(regExp, str) {
+//   const marches = []
+//   for (const match of str.marcheAll(regExp)) {
+//     marches.push(match[1])
+//   }
+//   return marches
+// }
+// console.log(select(/"([^"]*)"/g,str ))
+
+// const arr = [['foo', 1],['bar', 2]]
+// const obj = Object.fromEntries(arr)
+// console.log(obj.bar)
+
+const obj = { 
+  abc: 1,
+  def: 2,
+  gh: 3
 }
-console.log(select(/"([^"]*)"/g,str ))
+let res = Object.fromEntries(Object.entries(obj))
 
